@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+  open-pull-requests-limit: 10
+  labels:
+  - dependabot
+  ignore:
+  - dependency-name: "@testing-library/react"
+    versions:
+    - 11.2.6
+  - dependency-name: "@babel/core"
+    versions:
+    - 7.13.13
+    - 7.13.14
+  - dependency-name: styled-components
+    versions:
+    - 5.2.3
+  - dependency-name: eslint
+    versions:
+    - 7.23.0
+  - dependency-name: husky
+    versions:
+    - 5.2.0
